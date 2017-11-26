@@ -11,10 +11,12 @@ class MainComponent extends React.Component {
             <div>
                 <NavComponent />
                 <br /><br />
-                <Switch>
-                    <Route path="/countdown" component={CountdownComponent} />
-                    <Route exact path="/" component={TimerComponent} />
-                </Switch>
+                <div className="medium-4 large-4 small-centered">
+                    <Switch>
+                        <Route path="/countdown" component={CountdownComponent} />
+                        <Route exact path="/" component={TimerComponent} />
+                    </Switch>
+                </div>
             </div>
         );
     }

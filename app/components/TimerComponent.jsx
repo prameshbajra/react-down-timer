@@ -1,9 +1,13 @@
 import React from "react";
 
+import ClockComponent from "ClockComponent";
+
 class TimerComponent extends React.Component {
     render() {
         return (
-            <h1>LOL</h1>
+            <div>
+                <ClockComponent />
+            </div>
         );
     }
 }
