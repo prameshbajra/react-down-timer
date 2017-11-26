@@ -1,7 +1,7 @@
 {
-    "name": "react-boiler-plate",
+    "name": "react-down-timer",
     "version": "1.0.0",
-    "description": "Learning react",
+    "description": "Making a timer app using React",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,0 +1,15 @@
+.top-bar,
+.top-bar ul {
+    background-color: $nav-background;
+}
+
+.top-bar {
+    .menu-text {
+        color: $nav-text-color;
+    }
+    li {
+        a {
+            color: $nav-links;
+        }
+    }
+}
