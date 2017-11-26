@@ -25,6 +25,8 @@ module.exports = {
             // Add key value pair for your imports ...
             MainComponent: "app/components/MainComponent.jsx",
             NavComponent: "app/components/NavComponent.jsx",
+            TimerComponent: "app/components/TimerComponent.jsx",
+            CountdownComponent: "app/components/CountdownComponent.jsx",
 
             ApplicationStyles: "app/styles/app.scss"
         },

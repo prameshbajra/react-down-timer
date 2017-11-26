@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Route, HashRouter } from "react-router-dom";
+import { Route, HashRouter, BrowserRouter } from "react-router-dom";
 
 import MainComponent from "MainComponent";
 
@@ -9,9 +9,9 @@ require("style-loader!css-loader!sass-loader!ApplicationStyles");
 $(document).foundation();
 
 ReactDOM.render(
-    <HashRouter>
+    <BrowserRouter>
         <Route path="/" component={MainComponent} >
         </Route>
-    </HashRouter>,
+    </BrowserRouter>,
     document.getElementById("app")
 );

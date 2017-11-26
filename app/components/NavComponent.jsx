@@ -10,17 +10,17 @@ class NavComponent extends React.Component {
                         <li className="menu-text"><b>Timer Countdown App</b></li>
                         <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
                         <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                        <li><NavLink to="/" activeClassName="active-link" >Timer</NavLink></li>
-                        <li><NavLink to="/" activeClassName="active-link" >Countdown</NavLink></li>
+                        <li><NavLink exact to="/" activeClassName="active" activeStyle={{ fontWeight: "bold" }}>Timer</NavLink></li>
+                        <li><NavLink to="/countdown" activeClassName="active" activeStyle={{ fontWeight: "bold" }}>Countdown</NavLink></li>
                     </ul>
-                </div>
+                </div >
                 <div className="top-bar-right">
                     <ul className="menu">
                         <li className="menu-text">Created by - </li>
                         <li><b><a href="https://www.github.com/Suzal3579" target="_blank">Pramesh Bajracharya</a></b></li>
                     </ul>
                 </div>
-            </div>
+            </div >
         );
     }
 }

@@ -1,7 +1,7 @@
 import expect from "expect";
 
-describe("All test shall pass !!", () => {
-    it("should run tests", () => {
+describe("App", () => {
+    it("Should simply run and pass the test", () => {
         expect(1).toBe(1);
     });
-})
+});
