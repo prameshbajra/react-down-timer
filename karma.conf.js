@@ -5,11 +5,11 @@ module.exports = function (config) {
         frameworks: ["mocha"],
         browsers: ["Chrome"],
         singleRun: true,
-        files: ["app/tests/**/*.text.jsx"],
+        files: ["app/tests/**/*.test.jsx"],
+        reporter: ["mocha"],
         preprocessors: {
             "app/tests/**/*.test.jsx": ["webpack", "sourcemap"]
         },
-        reporter: ["mocha"],
         client: {
             mocha: {
                 timeout: "5000"
