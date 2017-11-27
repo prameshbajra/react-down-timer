@@ -9,9 +9,9 @@ require("style-loader!css-loader!sass-loader!ApplicationStyles");
 $(document).foundation();
 
 ReactDOM.render(
-    <BrowserRouter>
+    <HashRouter>
         <Route path="/" component={MainComponent} >
         </Route>
-    </BrowserRouter>,
+    </HashRouter>,
     document.getElementById("app")
 );
