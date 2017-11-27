@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Route, HashRouter } from "react-router-dom";
+import { Route, HashRouter, BrowserRouter } from "react-router-dom";
 
 import MainComponent from "MainComponent";
 
