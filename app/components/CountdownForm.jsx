@@ -17,7 +17,9 @@ class CountdownComponent extends React.Component {
         return (
             <form ref="form" onSubmit={this.countDownHandler} className="countdown-form">
                 <input type="text" ref="seconds" placeholder="Enter time in seconds ..." />
-                <button className="hollow button success expanded">Start</button>
+                <button className="button success expanded" id="form-button">
+                    S T A R T
+                </button>
             </form>
         );
     }
