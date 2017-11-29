@@ -9,11 +9,9 @@ import CountdownComponent from "CountdownComponent";
 
 describe("Count Down Form ...", () => {
     it("should exist - CountdownForm ...", () => {
-        // Checking if CountDownForm exists or not ...
         expect(CountdownForm).toBeTruthy();
     });
     it("should exist - CountdownComponent ... ", () => {
-        // Checking if CountdownComponent exists or not ...
         expect(CountdownComponent).toBeTruthy();
     });
 
@@ -37,7 +35,27 @@ describe("Count Down Form ...", () => {
                 expect(countdown.state.count).toBe(0);
                 done();
             }, 4000);
-        })
+        });
+        it("should pause countdown when paused", (done) => {
+            const countdown = TestUtils.renderIntoDocument(<CountdownComponent />);
+            countdown.handleSetCountDown(3);
+            countdown.handleStatusChange("paused");
+            setTimeout(() => {
+                expect(countdown.state.count).toBe(3);
+                expect(countdown.state.countDownStatus).toBe("paused");
+                done();
+            }, 1001);
+        });
+        it("should stop compeletely when stopped", (done) => {
+            const countdown = TestUtils.renderIntoDocument(<CountdownComponent />);
+            countdown.handleSetCountDown(5);
+            countdown.handleStatusChange("stopped");
+            setTimeout(() => {
+                expect(countdown.state.count).toBe(0);
+                expect(countdown.state.countDownStatus).toBe("stopped");
+                done();
+            }, 2000);
+        });
     });
 
     // If interested use "jest" to use spies and do testing ... For expect 21+ createSpy is not working !!
@@ -52,5 +70,4 @@ describe("Count Down Form ...", () => {
 
     //     expect(spy).toHaveBeenCalledWith(109);
     // });
-
 });
