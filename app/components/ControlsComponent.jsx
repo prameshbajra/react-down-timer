@@ -19,7 +19,7 @@ class ControlsComponent extends React.Component {
         const renderCorrectButton = () => {
             if (countDownStatus === "started") {
                 return <button className="button secondary success" onClick={this.onStatusChange("paused")}>P A U S E</button>
-            } else if (countDownStatus === "paused") {
+            } else {
                 return <button className="button primary success" onClick={this.onStatusChange("started")}>S T A R T</button>
             }
         };
