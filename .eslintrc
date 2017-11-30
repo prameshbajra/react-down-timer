@@ -8,5 +8,14 @@
             "jsx": true,
             "modules": true
         }
+    },
+    "rules": {
+        "no-unused-vars": "error",
+        "no-var": "error",
+        "no-console": "error",
+        "no-extra-semi": "error",
+        "quotes": [2, "double"],
+        "no-mixed-spaces-and-tabs": "error",
+        "no-empty": "error"
     }
 }
